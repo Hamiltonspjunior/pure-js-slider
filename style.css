@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.slider {
+  /* max-width: 600px; */
+  overflow: hidden;
+}
+
+.slider_container {
+  display: flex;
+  transition: transform .5s ease-in-out;
+}
+
+.slider_item {
+  flex-shrink: 0;
+  max-width: 100%;
+}

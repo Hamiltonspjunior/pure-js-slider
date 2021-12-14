@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider com JavaScript puro!</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div data-js="mySlider" class="slider">
+      <div data-js="slider_item" class="slider_item">
+        <img src="./images/slide-01.jpg" alt="">
+      </div>
+      <div data-js="slider_item" class="slider_item">
+        <img src="./images/slide-02.jpg" alt="">
+      </div>
+      <div data-js="slider_item" class="slider_item">
+        <img src="./images/slide-03.jpg" alt="">
+      </div>
+      <div data-js="slider_item" class="slider_item">
+        <img src="./images/slide-04.jpg" alt="">
+      </div>
+    </div>
+
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+    <button data-slide="3" class="go-to">4</button>
+  </body>
+  <!-- <script src="./slider.js"></script> -->
+  <script src="./slider2.js"></script>
+  <script>
+    initSlider('[data-js="mySlider"]', {
+      start: 0,
+      loop: false, 
+      nav: true,
+      dots: true,
+      autoplay: false,
+    })
+  </script>
+</html>
